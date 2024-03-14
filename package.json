@@ -1,0 +1,10 @@
+{
+    "name": "napredni-streznik",
+    "version": "0.0.1",
+    "description": "Strežnik, ki streže statične in dinamične spletne strani",
+    "dependencies": {
+        "mime-types": "*",
+        "formidable": "*"
+    },
+    "private": true
+}
