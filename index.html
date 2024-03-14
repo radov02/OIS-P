@@ -1,0 +1,67 @@
+<!DOCTYPE html> <!-- brskalniku pove tip HTML dokumenta - HTML5-->
+
+<html>
+    <head>  <!-- glava HTML dokumenta - za metapodatke -->
+        <meta charset="utf-8"> <!-- metaoznake podrobneje opisujejo stran za lažjo interpretacijo s strani brskalnika oz. spletnih iskalnikov -->
+        <meta name="description" content="Najboljša trgovina v Sloveniji">
+        <title>Prodajalna</title> <!-- naslov zavihka -->
+    </head>
+    <body>  <!-- vsebina za prikaz -->
+        <h1>Spletna trgovina</h1>
+        <h2>Uvodni nagovor</h2>
+        <p><em>Lorem ipsum</em><br/> dolor sit amet, <strong>consectetur</strong> adipiscing <i>elit.</i> Donec quis gravida turpis, vitae tristique justo. Etiam hendrerit suscipit lacus. Ut auctor vulputate sapien, et viverra quam commodo nec. Suspendisse pellentesque, libero auctor sollicitudin porttitor, dui augue elementum magna, ac ultrices urna sapien eget dui. Vestibulum sollicitudin eleifend dolor, non auctor libero tincidunt nec. Nullam sollicitudin nisi laoreet elit tristique tristique. Praesent libero sapien, eleifend nec facilisis et, vehicula quis orci. </p>
+        
+        <h6>Najmanjši naslov, seznami:</h6>
+        <p>Prodajamo:</p>
+        <ul>
+            <li>melone,</li>
+            <li>hokaido buče</li>
+        </ul>
+        <p>Najpogosteje kupljeno:</p>
+        <ol>
+            <li><a href="https://sl.wikipedia.org/wiki/Hokkaido_bu%C4%8Da">hokaido buče</a></li>
+            <li>melone</li>
+        </ol>
+        <img src="./public/Squash_(1351012634).jpg" alt="Hokaido buča">
+
+        <p>
+            Poglejmo si značilnosti hokaido buč:
+            <table>
+                <th>
+                    <td colspan="2">Hokkaido buča</td>
+                </th>
+                <tr>
+                    <td>Kraljestvo:</td>
+                    <td>Plantae (rastline)</td>
+                </tr>
+                <tr>
+                    <td>Deblo:</td>
+                    <td>Magnoliophyta (kritosemenke)</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Japonsko (katakana):</td>
+                    <td>ウチキクリ</td>
+                </tr>
+                <tr>
+                    <td>»Uchiki kuri«</td>
+                </tr>
+            </table>
+        </p>
+        
+        <div style="border:3px solid black; padding:35px">
+            <h3>Oddajte komentar:</h3>
+            <form action="/posredujSporocilo" method="post">
+                <p>Oseba: <input type="text" name="oseba" placeholder="Vnesite ime in priimek"></p>
+                <p>Komentar: <textarea name="komentar" cols="20" placeholder="Vnesite komentar"></textarea></p>
+                <p>Kako zelo vas je <span style="border:3px solid blue;">strah</span> kač?</p>
+                <select name="strah">
+                    <option value="-1">Sploh ne</option>
+                    <option value="1">Malo</option>
+                    <option value="2">Zelo</option>
+                </select>
+                <p><input type="submit" value="Pošlji podatke"></p>
+            </form>
+        </div>
+    </body>
+    
+</html>
