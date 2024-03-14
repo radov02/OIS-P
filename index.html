@@ -5,9 +5,17 @@
         <meta charset="utf-8"> <!-- metaoznake podrobneje opisujejo stran za lažjo interpretacijo s strani brskalnika oz. spletnih iskalnikov -->
         <meta name="description" content="Najboljša trgovina v Sloveniji">
         <title>Prodajalna</title> <!-- naslov zavihka -->
+        <style> 
+            p, div, table, img{
+                margin-left:20px;
+                margin-right:20px;
+            }
+        </style>    <!--lahko opredelimo stil CSS v glavi dokumenta -->
+        <!-- ali pa CSS kreiramo v drugi datoteki in ju povežemo: -->
+        <link rel="stylesheet" href="./stil.css">
     </head>
     <body>  <!-- vsebina za prikaz -->
-        <h1>Spletna trgovina</h1>
+        <h1 style="color:DarkRed">Spletna trgovina</h1>
         <h2>Uvodni nagovor</h2>
         <p><em>Lorem ipsum</em><br/> dolor sit amet, <strong>consectetur</strong> adipiscing <i>elit.</i> Donec quis gravida turpis, vitae tristique justo. Etiam hendrerit suscipit lacus. Ut auctor vulputate sapien, et viverra quam commodo nec. Suspendisse pellentesque, libero auctor sollicitudin porttitor, dui augue elementum magna, ac ultrices urna sapien eget dui. Vestibulum sollicitudin eleifend dolor, non auctor libero tincidunt nec. Nullam sollicitudin nisi laoreet elit tristique tristique. Praesent libero sapien, eleifend nec facilisis et, vehicula quis orci. </p>
         
@@ -26,21 +34,21 @@
 
         <p>
             Poglejmo si značilnosti hokaido buč:
-            <table>
-                <th>
-                    <td colspan="2">Hokkaido buča</td>
-                </th>
+            <table style="border:2px solid green">
+                <tr>
+                    <th colspan="2">Hokkaido buča</th>
+                </tr>
                 <tr>
                     <td>Kraljestvo:</td>
-                    <td>Plantae (rastline)</td>
+                    <td class="pomembniPodatkiTabele">Plantae (rastline)</td>
                 </tr>
                 <tr>
                     <td>Deblo:</td>
-                    <td>Magnoliophyta (kritosemenke)</td>
+                    <td class="pomembniPodatkiTabele">Magnoliophyta (kritosemenke)</td>
                 </tr>
                 <tr>
                     <td rowspan="2">Japonsko (katakana):</td>
-                    <td>ウチキクリ</td>
+                    <td class="pomembniPodatkiTabele" id="katakana">ウチキクリ</td>
                 </tr>
                 <tr>
                     <td>»Uchiki kuri«</td>

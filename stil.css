@@ -1,0 +1,36 @@
+h1 {
+    border: 3px solid black;
+    border-radius:4px;
+    background-color:rgba(240, 128, 128, 0.616);
+}
+
+h1:hover{
+    background-color: beige;
+}
+
+img {
+    padding: 4px   !important;
+    border-radius: 4px;
+    border: 1px solid #5204d1;
+}
+
+.pomembniPodatkiTabele{
+    text-transform: uppercase;
+}
+
+#katakana {
+    font-weight:900;
+    color:#5204d1;
+}
+
+table th {
+    background-color: bisque;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
